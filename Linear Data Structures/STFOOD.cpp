@@ -37,11 +37,11 @@ int main()
 	int i = 0, j = 0;
 	cases
 	{
-        	int n;  cin >> n;
-        	int a[n][3];    fo(i,n) fo(j,3) cin >> a[i][j];
-        	int profit[n],maxprofit=0;
-        	fo(i,n)
-        	{
+        int n;  cin >> n;
+        int a[n][3];    fo(i,n) fo(j,3) cin >> a[i][j];
+        int profit[n],maxprofit=0;
+        fo(i,n)
+        {
 			profit[i] = floor(a[i][1]/(a[i][0]+1))*a[i][2];
 			if(profit[i]>maxprofit)
 			maxprofit = profit[i];
