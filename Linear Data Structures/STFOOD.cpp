@@ -44,7 +44,7 @@ int main()
         	{
 			profit[i] = floor(a[i][1]/(a[i][0]+1))*a[i][2];
 			if(profit[i]>maxprofit)
-				maxprofit = profit[i];
+			maxprofit = profit[i];
 		}
 		pi(maxprofit);
 	}
