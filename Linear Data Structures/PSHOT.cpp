@@ -41,7 +41,7 @@ int main()
         string s;
         cin >> n >> s;
         int asum = 0, bsum = 0, arem = n, brem = n, ans = 2 * n;
-        for(i = 0; i < 2 * n; i++)
+        fo(i, 2 * n)
         {
             if(i%2==0)
             {
