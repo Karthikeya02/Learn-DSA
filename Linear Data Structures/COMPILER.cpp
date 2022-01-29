@@ -42,11 +42,11 @@ int main()
         ll ans = 0, count = 0;
         fo(i,s.length())
         {
-            if(count < 0)   break;
-            if(s[i] == '<') count++;
-            else    count--;
-            if(count == 0)  ans = (i+1);
-        }
+            if(s[i] == '<')	count++;
+            else	count--;
+            if(count == 0)	ans = (i+1);
+			if (count < 0)	break;
+		}
         cout << ans << endl;
 	}
 	return 0;
